@@ -25,13 +25,16 @@ body{
 }
 
 .about-stat{
-  display: flex;
-  justify-content: space-around;
-   
-     margin: 0 auto;
-     text-align: center;
-    max-width: 1200px;
-   margin-bottom: 30px;
+   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  padding: 30px;
+  
+  
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
    
     
 }
@@ -240,7 +243,7 @@ color: rgba(255, 255, 255, 0.237);
 
 .meet-container{
  
-  width: 1200px;
+  max-width: 1200px;
   
   margin: 0 auto;
 }
@@ -499,137 +502,55 @@ margin: 12px;
     margin-bottom: 120px;
 }
 
-@media (max-width: 576px) {
+.hide{
+    display: none !important;
+}
 
-  /* ===== Global ===== */
-  body {
-    overflow-x: hidden;
-  }
-
-  h1 { font-size: 36px !important; }
-  h3 { font-size: 28px !important; }
-  p  { font-size: 14px; }
-
-  /* ===== Navigation ===== */
-  nav {
-    padding: 16px;
-  }
-
-  .navigation {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .navigation-about > ul {
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-  }
-
-  /* ===== Banner ===== */
-  .banner {
-    height: auto;
-    padding-bottom: 60px;
-  }
-
-  .banner-contant {
-    margin-top: 60px;
-    padding: 0 16px;
-  }
-
-  .hero-micro,
-  .new-btn {
-    display: none; /* remove absolute-positioned elements */
-  }
-
-  .two-btn {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-
-  /* ===== About Section ===== */
-  .about-content {
-    padding: 0 16px;
-    margin: 40px auto;
-  }
-
-  .about-stat {
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  /* ===== Grid Section ===== */
-  .grid-container {
-    padding: 40px 16px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .grid-1,
-  .grid-2,
-  .grid-3,
-  .grid-4,
-  .grid-5 {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
-
-  /* ===== Featured Episodes ===== */
-  .features-meet {
-    padding: 40px 16px;
-    max-height: none;
-  }
-
-  .videoAndText {
-    flex-direction: column;
-    gap: 24px;
-  }
-
-  .videoAndText-1 {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .video-1 {
+@media screen and (max-width:576px){
+    .videoAndText{
+        flex-direction: column;
+    }
+.features-meet {
+    max-width: 1200px;
+    margin: 0 auto;
+    max-height: 540px;
+    text-align: center;
+}
+.video-1 iframe{
     width: 100%;
-    height: 200px;
-  }
-
-  /* ===== Meet the Host ===== */
-  .meet-container {
-    width: 100%;
-    padding: 0 16px;
-  }
-
-  .meet-details {
+}
+.meet{
+    margin-top: 1000px;
+    
+}
+.meet-details{
     flex-direction: column;
     text-align: center;
-  }
-
-  .meet-details img {
-    width: 100%;
-    max-width: 250px;
-    margin: 0 auto;
-  }
-
-  .meet-icons {
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
-  /* ===== Footer ===== */
-  .foot-icon {
-    flex-direction: column;
-    gap: 20px;
     align-items: center;
-  }
-
-  .footer-icons {
+}
+.meet-details>img{
+    height: 150px;
+    width: 150px;
+}
+.meet-icons{
     justify-content: center;
+}
+ .grid {
+    grid-template-columns: repeat(1, 1fr);
   }
+.about-stat{
+    margin-top: 80px;
+
+}
+.about-stat{
+    grid-template-columns: repeat(2,1fr);
+}
+.foot-icon {
+    flex-wrap: wrap;
+    margin: 60px;
+}
+
+
 }
 
 
