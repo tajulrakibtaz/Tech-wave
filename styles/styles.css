@@ -499,50 +499,163 @@ margin: 12px;
     margin-bottom: 120px;
 }
 
+@media (max-width: 576px) {
 
+  /* ===== Global ===== */
+  body {
+    overflow-x: hidden;
+  }
 
+  h1 { font-size: 36px !important; }
+  h3 { font-size: 28px !important; }
+  p  { font-size: 14px; }
 
+  /* ===== Navigation ===== */
+  nav {
+    padding: 16px;
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 576px) {
-
-.line{
-    max-width:400px ;
-   margin: 40px auto;
-}
-
-.about-stat{
-    flex-wrap: wrap;
-    
-}
-
-.grid-container{
+  .navigation {
     flex-direction: column;
-}
-.about-stat{
+    gap: 16px;
+  }
+
+  .navigation-about > ul {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  /* ===== Banner ===== */
+  .banner {
+    height: auto;
+    padding-bottom: 60px;
+  }
+
+  .banner-contant {
+    margin-top: 60px;
+    padding: 0 16px;
+  }
+
+  .hero-micro,
+  .new-btn {
+    display: none; /* remove absolute-positioned elements */
+  }
+
+  .two-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  /* ===== About Section ===== */
+  .about-content {
+    padding: 0 16px;
+    margin: 40px auto;
+  }
+
+  .about-stat {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  /* ===== Grid Section ===== */
+  .grid-container {
+    padding: 40px 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-5 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  /* ===== Featured Episodes ===== */
+  .features-meet {
+    padding: 40px 16px;
+    max-height: none;
+  }
+
+  .videoAndText {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .videoAndText-1 {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .video-1 {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* ===== Meet the Host ===== */
+  .meet-container {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .meet-details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .meet-details img {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+
+  .meet-icons {
+    justify-content: center;
     flex-wrap: wrap;
+  }
+
+  /* ===== Footer ===== */
+  .foot-icon {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
 }
 
 
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
