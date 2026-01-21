@@ -431,7 +431,7 @@ font-weight: 600;
 line-height: 19px;
 }
 .new-btn:hover{
-    border:2px solid lightgreen;
+    border:2px solid #00ff88;
 }
 .banner-power:hover .hero-micro{
     transform: rotate(90deg);
