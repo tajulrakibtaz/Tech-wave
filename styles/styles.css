@@ -365,6 +365,16 @@ font-weight: 600;
 line-height: 19px;
 border: none;
 }
+.pri-btn-1{
+    color: #FFFFFF;
+    background: linear-gradient(47.64deg, rgba(247, 233, 63, 1),rgba(251, 9, 180, 1),rgba(145, 0, 248, 1));
+    padding: 12px 20px;
+    border-radius: 100px;
+font-size: 16px;
+font-weight: 600;
+line-height: 19px;
+border: none;
+}
 
 
 .footer-title {
@@ -398,25 +408,37 @@ background: transparent;
 
 }
 
-.hero-circle{
-    position: relative
-}
+
+ .banner-power{
+    position: relative;
+ }
 .hero-micro{
     position: absolute;
-    left: 730px;
-    top: 326px;
+    left: 39%;
+    top: 25%;
 }
-
 .new-btn {
     border-radius: 1000px;
     padding: 8px 16px;
-    background-color: rgb(127, 214, 127);
+    background-color: #00FF88;
     color: #230E3D;
     border: none;
     position: absolute;
-    left: 850px;
+   left: 59%;
     font-size: 20px;
+    font-size: 16px;
+font-weight: 600;
+line-height: 19px;
 }
+.new-btn:hover{
+    border:2px solid lightgreen;
+}
+.banner-power:hover .hero-micro{
+    transform: rotate(90deg);
+    transition: 6s;
+
+}
+
 .banner>.banner-contant>h1{
     font-size: 60px;
 font-weight: 800;
@@ -460,7 +482,7 @@ margin-bottom: 14px;
     max-width:1200px;
     max-height: 440px;
 }
-.videoAndText-1{
+.box-vid-1,.box-vid-2,.box-vid-3{
     
     max-width:380px;
     height: 440px;
@@ -474,16 +496,36 @@ margin-bottom: 14px;
     display: flex;
     gap: 12px;
 }
+.bar{
+    display: none;
+}
 
-
-.videoAndText>.videoAndText-1>h3{
+.box-vid-1>h3{
     margin: 14px;
 }
-.videoAndText>.videoAndText-1>p{
-    margin: 7px;
+.box-vid-1>p{
+    margin: 8px;
+    font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: rgba(255, 255, 255, 0.237);
 }
+
+.video-details>p{
+    margin: 8px;
+    font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+color: rgba(255, 255, 255, 0.237);
+}
+.video-details>h3{
+    margin: 14px;
+}
+
 .clock{
-    margin: 7px;
+    margin: 10px;
+    align-self: left;
+    
 }
 
 
@@ -501,10 +543,56 @@ margin: 12px;
 .meet{
     margin-bottom: 120px;
 }
+.videosAndMeet>h3{
+font-style: Bold;
+font-size: 48px;
+font-weight: 700;
+line-height: 58px;
+text-align: center;
+margin-top: 40px;
+margin-bottom: 40px
+}
+
+.videosAndMeet{
+    width: 1200px;
+    height: 540px;
+    margin: 0 auto;
+ 
+}
+.box-vid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 1200px;
+    height: 440px;
+   
+    
+}
+.meet-container>h3{
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .hide{
     display: none !important;
 }
+
+
+
+
+
+
 
 @media screen and (max-width:576px){
     .videoAndText{
@@ -549,7 +637,26 @@ margin: 12px;
     flex-wrap: wrap;
     margin: 60px;
 }
+.bar{
+    display: inline;
+}
+.navigation-about{
+display: none;
+}
+.pri-btn-1{
+display: none;
+}
 
+
+.box-vid{
+    grid-template-columns: repeat(1,1fr);
+    gap: 24px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.videosAndMeet{
+    width: 100%;
+}
 
 }
 
